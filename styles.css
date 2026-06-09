@@ -87,14 +87,13 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: var(--white);
-  font-family: var(--sans);
-  font-size: clamp(0.78rem, 2vw, 1rem);
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  line-height: 1;
-  text-transform: uppercase;
   transform: translate(-50%, -50%);
+}
+
+.wordmark img {
+  display: block;
+  width: clamp(7.5rem, 18vw, 13rem);
+  height: auto;
 }
 
 .nav-toggle {
@@ -502,7 +501,10 @@ h1 {
 
   .wordmark {
     max-width: 9rem;
-    text-align: center;
+  }
+
+  .wordmark img {
+    width: clamp(6.8rem, 38vw, 9rem);
   }
 
   .hero-media {

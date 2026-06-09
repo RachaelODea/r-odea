@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" role="img" aria-labelledby="title">
+  <title id="title">Rachael O'Dea</title>
+  <rect width="900" height="240" fill="transparent"/>
+  <text
+    x="52"
+    y="170"
+    fill="#ffffff"
+    font-family="Cormorant Garamond, Didot, Bodoni 72, Georgia, serif"
+    font-size="168"
+    font-weight="500"
+    letter-spacing="6"
+  >R-ODEA</text>
+  <path
+    d="M278 55 C296 93 350 105 386 83"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="8"
+    stroke-linecap="round"
+  />
+  <path
+    d="M291 188 C291 128 321 100 356 100 C391 100 421 128 421 188"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="8"
+    stroke-linecap="round"
+  />
+</svg>
