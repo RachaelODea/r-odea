@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="iMsgBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#21b0f6"/>
+      <stop offset="100%" stop-color="#0a7cfd"/>
+    </linearGradient>
+    <filter id="ilyShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#ilyShadow)">
+    <path d="M70 200
+             C 70 130, 130 90, 200 90
+             C 270 90, 330 130, 330 200
+             C 330 270, 270 310, 200 310
+             L 165 310
+             C 150 322, 130 332, 105 335
+             C 95 336, 92 330, 99 324
+             C 115 310, 122 295, 122 282
+             C 92 262, 70 234, 70 200 Z"
+          fill="url(#iMsgBlue)"
+          stroke="#ffffff"
+          stroke-width="14"
+          stroke-linejoin="round"/>
+    <g fill="#ffffff">
+      <path d="M105 160 H155 V182 H140 V218 H155 V240 H105 V218 H120 V182 H105 Z"/>
+      <path d="M170 160 H192 V218 H220 V240 H170 Z"/>
+      <path d="M235 160 H257 L265 200 L273 160 H295 L276 205 V240 H254 V205 Z"/>
+    </g>
+  </g>
+</svg>
