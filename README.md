@@ -1,8 +1,10 @@
 # Rachael O'Dea Website
 
-A lightweight static website built with HTML, CSS, and JavaScript.
+A lightweight static website inspired by refined luxury membership and sourcing
+sites. It is built with HTML, CSS, and JavaScript so copy, sections, and styling
+can be edited quickly while previewing live.
 
-## Preview locally
+## Live preview while editing
 
 Open `index.html` directly in a browser, or serve the folder with a simple
 static server:
@@ -12,6 +14,9 @@ python3 -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.
+
+Any saved changes to `index.html`, `styles.css`, or `script.js` can be viewed by
+refreshing the browser.
 
 ## Files
 
