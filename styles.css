@@ -97,6 +97,16 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.wordmark img {
+  display: block;
+  width: clamp(7rem, 18vw, 12.5rem);
+  height: auto;
+}
+
+.wordmark-fallback {
+  display: block;
+}
+
 .nav-toggle {
   position: absolute;
   top: 50%;
@@ -503,6 +513,10 @@ h1 {
   .wordmark {
     max-width: 9rem;
     text-align: center;
+  }
+
+  .wordmark img {
+    width: clamp(6.5rem, 40vw, 9rem);
   }
 
   .hero-media {

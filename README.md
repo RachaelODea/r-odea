@@ -23,3 +23,4 @@ refreshing the browser.
 - `index.html` - page content and semantic structure
 - `styles.css` - responsive layout and visual styling
 - `script.js` - mobile menu behavior and footer year
+- `LOGO.png` - optional local logo file used in the header when present

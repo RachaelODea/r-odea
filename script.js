@@ -1,9 +1,18 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav-links a");
+const logoImage = document.querySelector(".wordmark img");
+const logoFallback = document.querySelector(".wordmark-fallback");
 const year = document.querySelector("#year");
 
 if (year) {
   year.textContent = new Date().getFullYear();
+}
+
+if (logoImage && logoFallback) {
+  logoImage.addEventListener("error", () => {
+    logoImage.hidden = true;
+    logoFallback.hidden = false;
+  });
 }
 
 if (navToggle) {
