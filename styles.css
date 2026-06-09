@@ -87,13 +87,6 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: var(--white);
-  font-family: var(--sans);
-  font-size: clamp(0.78rem, 2vw, 1rem);
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  line-height: 1;
-  text-transform: uppercase;
   transform: translate(-50%, -50%);
 }
 
@@ -101,10 +94,6 @@ p {
   display: block;
   width: clamp(7rem, 18vw, 12.5rem);
   height: auto;
-}
-
-.wordmark-fallback {
-  display: block;
 }
 
 .nav-toggle {
