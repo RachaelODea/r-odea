@@ -216,6 +216,77 @@ body.nav-open .nav-panel {
     linear-gradient(135deg, #4c403d, #171717);
 }
 
+.sticker-layer {
+  position: absolute;
+  top: clamp(7rem, 18vw, 13rem);
+  right: clamp(1rem, 8vw, 8rem);
+  z-index: 2;
+  display: grid;
+  gap: 1.1rem;
+  justify-items: end;
+  pointer-events: none;
+}
+
+.message-sticker {
+  position: relative;
+  margin: 0;
+  border: clamp(0.55rem, 1.4vw, 0.9rem) solid var(--white);
+  border-radius: 2.1rem;
+  padding: clamp(0.7rem, 1.5vw, 1.05rem) clamp(1.15rem, 2.5vw, 2rem);
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: clamp(1.25rem, 3.2vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.24);
+  transform: rotate(-3deg);
+}
+
+.message-sticker::before,
+.message-sticker::after {
+  position: absolute;
+  content: "";
+}
+
+.message-sticker::before {
+  right: -1.3rem;
+  bottom: -0.55rem;
+  width: 2.2rem;
+  height: 1.9rem;
+  border-right: clamp(0.55rem, 1.4vw, 0.9rem) solid var(--white);
+  border-bottom: clamp(0.55rem, 1.4vw, 0.9rem) solid var(--white);
+  border-bottom-right-radius: 2rem;
+  transform: rotate(14deg);
+}
+
+.message-sticker::after {
+  right: -0.85rem;
+  bottom: -0.02rem;
+  width: 1.8rem;
+  height: 1.18rem;
+  border-bottom-right-radius: 1.6rem;
+  transform: rotate(14deg);
+}
+
+.sticker-pink {
+  background: #f5bed6;
+}
+
+.sticker-pink::after {
+  background: #f5bed6;
+}
+
+.sticker-orange {
+  justify-self: start;
+  background: #f6d7bd;
+  transform: rotate(4deg);
+}
+
+.sticker-orange::after {
+  background: #f6d7bd;
+}
+
 .hero-content {
   position: absolute;
   bottom: 3.5rem;
@@ -537,6 +608,35 @@ h1 {
     bottom: 4.5rem;
     left: 1rem;
     width: calc(100% - 2rem);
+  }
+
+  .sticker-layer {
+    top: 7.5rem;
+    right: 1rem;
+    gap: 0.7rem;
+  }
+
+  .message-sticker {
+    border-width: 0.45rem;
+    border-radius: 1.35rem;
+    padding: 0.52rem 0.78rem;
+    font-size: clamp(1.05rem, 7vw, 1.7rem);
+  }
+
+  .message-sticker::before {
+    right: -0.85rem;
+    bottom: -0.42rem;
+    width: 1.45rem;
+    height: 1.25rem;
+    border-right-width: 0.45rem;
+    border-bottom-width: 0.45rem;
+  }
+
+  .message-sticker::after {
+    right: -0.56rem;
+    bottom: -0.02rem;
+    width: 1.15rem;
+    height: 0.78rem;
   }
 
   .city-stack {
