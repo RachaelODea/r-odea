@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="520" height="320">
+  <defs>
+    <linearGradient id="orangeBubble" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe8d1"/>
+      <stop offset="100%" stop-color="#ffcfa3"/>
+    </linearGradient>
+    <filter id="orangeShadow" x="-5%" y="-15%" width="115%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#orangeShadow)">
+    <g fill="#ffffff" stroke="#ffffff" stroke-width="14" stroke-linejoin="round">
+      <rect x="40" y="50" width="420" height="200" rx="100"/>
+      <path d="M 395 220
+               C 430 232, 470 252, 490 270
+               C 498 277, 495 282, 486 282
+               C 460 282, 420 268, 390 240 Z"/>
+    </g>
+    <g fill="url(#orangeBubble)">
+      <rect x="40" y="50" width="420" height="200" rx="100"/>
+      <path d="M 395 220
+               C 430 232, 470 252, 490 270
+               C 498 277, 495 282, 486 282
+               C 460 282, 420 268, 390 240 Z"/>
+    </g>
+    <text x="250" y="173"
+          text-anchor="middle"
+          font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-weight="600"
+          font-size="72"
+          fill="#ffffff">&lt;ILY&gt;</text>
+  </g>
+</svg>

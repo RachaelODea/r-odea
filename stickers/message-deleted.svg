@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 320" width="820" height="320">
+  <defs>
+    <linearGradient id="pinkBubble" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd6e0"/>
+      <stop offset="100%" stop-color="#ffb3c5"/>
+    </linearGradient>
+    <filter id="pinkShadow" x="-5%" y="-15%" width="115%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#pinkShadow)">
+    <g fill="#ffffff" stroke="#ffffff" stroke-width="14" stroke-linejoin="round">
+      <rect x="40" y="50" width="720" height="200" rx="100"/>
+      <path d="M 695 220
+               C 730 232, 770 252, 790 270
+               C 798 277, 795 282, 786 282
+               C 760 282, 720 268, 690 240 Z"/>
+    </g>
+    <g fill="url(#pinkBubble)">
+      <rect x="40" y="50" width="720" height="200" rx="100"/>
+      <path d="M 695 220
+               C 730 232, 770 252, 790 270
+               C 798 277, 795 282, 786 282
+               C 760 282, 720 268, 690 240 Z"/>
+    </g>
+    <text x="400" y="173"
+          text-anchor="middle"
+          font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-weight="600"
+          font-size="72"
+          fill="#ffffff">&lt;message deleted&gt;</text>
+  </g>
+</svg>
