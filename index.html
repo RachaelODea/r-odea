@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A clean, responsive personal website for Rachael O'Dea."
+    >
+    <title>Rachael O'Dea | Digital Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="logo" href="#top" aria-label="Rachael O'Dea home">
+          <span class="logo-mark">RO</span>
+          <span>Rachael O'Dea</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Thoughtful digital experiences</p>
+            <h1>Building elegant websites for modern brands.</h1>
+            <p class="hero-text">
+              I help turn early ideas into polished web experiences with clear
+              messaging, clean design, and practical execution.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">Start a project</a>
+              <a class="button secondary" href="#work">View work</a>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Website highlights">
+            <div class="metric-card">
+              <span class="metric">01</span>
+              <p>Strategy-led design</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric">02</span>
+              <p>Responsive builds</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric">03</span>
+              <p>Launch-ready details</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Simple, useful, and built around the people using it.</h2>
+          </div>
+          <p>
+            This site is a starting point for presenting your work, services,
+            and contact details online. It is intentionally lightweight, fast,
+            and easy to customize as your brand direction becomes clearer.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Featured work</p>
+            <h2>Selected projects</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-image gradient-one"></div>
+              <div class="project-content">
+                <p class="tag">Brand website</p>
+                <h3>Launch-ready landing page</h3>
+                <p>
+                  A focused page structure for presenting a service, building
+                  trust, and encouraging visitors to get in touch.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image gradient-two"></div>
+              <div class="project-content">
+                <p class="tag">Portfolio</p>
+                <h3>Personal online presence</h3>
+                <p>
+                  A polished home for experience, selected work, and next steps
+                  so potential collaborators know how to connect.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image gradient-three"></div>
+              <div class="project-content">
+                <p class="tag">Experience design</p>
+                <h3>Clear content flow</h3>
+                <p>
+                  A flexible section system that can grow with new case studies,
+                  testimonials, services, or blog content.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Services</p>
+            <h2>What this site can support</h2>
+          </div>
+
+          <div class="service-list">
+            <article>
+              <span class="service-number">01</span>
+              <h3>Website strategy</h3>
+              <p>Shape the core message, audience journey, and calls to action.</p>
+            </article>
+            <article>
+              <span class="service-number">02</span>
+              <h3>Visual direction</h3>
+              <p>Create a cohesive look with color, type, spacing, and imagery.</p>
+            </article>
+            <article>
+              <span class="service-number">03</span>
+              <h3>Responsive build</h3>
+              <p>Deliver a fast static site that works beautifully across screens.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Ready to make this site your own?</h2>
+            <p>
+              Replace this placeholder copy with your preferred email, social
+              links, or project intake form when you are ready.
+            </p>
+          </div>
+          <a class="button primary" href="mailto:hello@example.com">
+            hello@example.com
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="year"></span> Rachael O'Dea. All rights reserved.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
