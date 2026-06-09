@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="A private luxury sourcing concept website for Rachael O'Dea."
+      content="A bold communications agency concept website for Rachael O'Dea."
     >
-    <title>Rachael O'Dea | Private Luxury Sourcing</title>
+    <title>Rachael O'Dea | Communications Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav container" aria-label="Primary navigation">
+      <nav class="nav" aria-label="Primary navigation">
         <a class="wordmark" href="#top" aria-label="Rachael O'Dea home">
           Rachael O'Dea
         </a>
@@ -32,176 +32,186 @@
           <span class="sr-only">Toggle navigation</span>
           <span></span>
           <span></span>
-          <span></span>
         </button>
 
-        <ul class="nav-links" id="primary-menu">
-          <li><a href="#access">Access</a></li>
-          <li><a href="#sourcing">Sourcing</a></li>
-          <li><a href="#edit">The Edit</a></li>
-          <li><a href="#membership">Membership</a></li>
-        </ul>
+        <div class="nav-panel" id="primary-menu">
+          <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="offices" aria-label="Studio offices">
+            <button type="button">London</button>
+            <button type="button">New York</button>
+            <button type="button">Los Angeles</button>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Private client access</p>
-            <h1>Rare finds, sourced with discretion.</h1>
-            <p class="hero-text">
-              A refined members' service for hard-to-find luxury fashion,
-              archive pieces, and curated discoveries from boutiques, showrooms,
-              and trusted partners around the world.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#membership">Request access</a>
-              <a class="button secondary" href="#sourcing">How it works</a>
-            </div>
-          </div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="intro-lines" aria-hidden="true">
+          <span>Global communications</span>
+          <span>Luxury, culture, and innovation</span>
+          <span>Fashion / Beauty / Lifestyle / Events / Digital</span>
+        </div>
 
-          <div class="hero-visual" aria-label="Curated luxury sourcing preview">
-            <div class="visual-panel panel-large">
-              <span>01</span>
-              <p>Runway, archive, and sold-out requests</p>
+        <div class="hero-inner">
+          <p class="kicker">Communications studio</p>
+          <h1 id="hero-title">
+            Brand stories with cultural reach.
+          </h1>
+          <p class="hero-copy">
+            A global-facing PR and communications concept for luxury brands,
+            talent, founders, and creative projects that need strategy,
+            visibility, and momentum.
+          </p>
+        </div>
+      </section>
+
+      <section class="filter-strip" aria-label="Service categories">
+        <a class="filter active" href="#work">All</a>
+        <a class="filter" href="#services">Fashion</a>
+        <a class="filter" href="#services">Beauty</a>
+        <a class="filter" href="#services">Lifestyle</a>
+        <a class="filter" href="#services">Events</a>
+        <a class="filter" href="#services">VIP</a>
+        <a class="filter" href="#services">Digital</a>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="section-label">
+          <span>Selected work</span>
+          <span>001</span>
+        </div>
+
+        <h2 id="work-title" class="sr-only">Selected work</h2>
+
+        <div class="project-grid">
+          <article class="project-card tall">
+            <div class="project-image image-purple">
+              <span>Campaign</span>
             </div>
-            <div class="visual-panel panel-small">
-              <span>Global edit</span>
-              <p>Paris / Milan / London / New York</p>
+            <div class="project-meta">
+              <h3>Luxury launch strategy</h3>
+              <p>Press narrative, talent seeding, and a sharp launch calendar.</p>
             </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image image-grey">
+              <span>Events</span>
+            </div>
+            <div class="project-meta">
+              <h3>Private client dinner</h3>
+              <p>Guest list, cultural programming, and post-event visibility.</p>
+            </div>
+          </article>
+
+          <article class="project-card wide">
+            <div class="project-image image-black">
+              <span>Digital</span>
+            </div>
+            <div class="project-meta">
+              <h3>Always-on brand presence</h3>
+              <p>Editorial planning across social, email, partnerships, and press.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image image-pink">
+              <span>VIP</span>
+            </div>
+            <div class="project-meta">
+              <h3>Talent placement</h3>
+              <p>Thoughtful alignment between product, people, and moments.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="section-label">
+          <span>Services</span>
+          <span>002</span>
+        </div>
+
+        <div class="split">
+          <h2 id="services-title">
+            Communications for brands moving through culture.
+          </h2>
+          <div class="service-list">
+            <article>
+              <span class="dot"></span>
+              <h3>Strategy</h3>
+              <p>Positioning, messaging, launch planning, and audience mapping.</p>
+            </article>
+            <article>
+              <span class="dot"></span>
+              <h3>Press</h3>
+              <p>Media relations, editorial storytelling, product announcements.</p>
+            </article>
+            <article>
+              <span class="dot"></span>
+              <h3>Experiences</h3>
+              <p>Events, dinners, previews, appointments, and cultural moments.</p>
+            </article>
+            <article>
+              <span class="dot"></span>
+              <h3>Digital</h3>
+              <p>Campaign direction, creator strategy, content systems, reporting.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section intro" id="access">
-        <div class="container split">
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="section-label">
+          <span>About</span>
+          <span>003</span>
+        </div>
+
+        <div class="about-copy">
+          <h2 id="about-title">
+            Built for founders and teams who want a clear voice in crowded rooms.
+          </h2>
+          <p>
+            This direction gives you a flexible foundation for a PR, brand,
+            consulting, or creative studio website. Copy can be swapped quickly
+            as your offer becomes more specific.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-label">
+          <span>Contact</span>
+          <span>004</span>
+        </div>
+
+        <div class="contact-grid">
+          <h2 id="contact-title">New business, collaborations, and press.</h2>
           <div>
-            <p class="eyebrow">Access beyond the retail floor</p>
-            <h2>Discover pieces that rarely reach the open market.</h2>
-          </div>
-          <div class="copy-stack">
-            <p>
-              Rachael O'Dea is imagined as a private sourcing destination for
-              clients who know what they are looking for, and for those who want
-              a trusted eye to uncover what they have not yet seen.
-            </p>
-            <p>
-              From limited releases to wardrobe-defining staples, the experience
-              is intentionally personal, quietly handled, and edited with care.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section sourcing" id="sourcing">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">The sourcing process</p>
-            <h2>A considered route from request to delivery.</h2>
-          </div>
-
-          <div class="step-grid">
-            <article>
-              <span class="service-number">01</span>
-              <h3>Share the brief</h3>
-              <p>
-                Send a specific item, brand, size, occasion, or mood. The more
-                precise the brief, the sharper the search.
-              </p>
-            </article>
-            <article>
-              <span class="service-number">02</span>
-              <h3>Review the edit</h3>
-              <p>
-                Receive a curated shortlist with availability, details, and
-                clear next steps before anything is secured.
-              </p>
-            </article>
-            <article>
-              <span class="service-number">03</span>
-              <h3>Secure the piece</h3>
-              <p>
-                Once approved, sourcing, confirmation, and delivery coordination
-                are handled with discretion.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section edit" id="edit">
-        <div class="container">
-          <div class="section-heading centered">
-            <p class="eyebrow">The edit</p>
-            <h2>Curated notes for a more intentional wardrobe.</h2>
-          </div>
-
-          <div class="editorial-grid">
-            <article class="editorial-card">
-              <div class="editorial-image gradient-one"></div>
-              <div class="editorial-content">
-                <p class="tag">Runway requests</p>
-                <h3>Just-seen pieces</h3>
-                <p>
-                  Track notable runway and pre-season arrivals before they
-                  become difficult to locate.
-                </p>
-              </div>
-            </article>
-
-            <article class="editorial-card">
-              <div class="editorial-image gradient-two"></div>
-              <div class="editorial-content">
-                <p class="tag">Archive search</p>
-                <h3>Past-season treasures</h3>
-                <p>
-                  Revisit silhouettes, bags, tailoring, and accessories from
-                  collections worth finding again.
-                </p>
-              </div>
-            </article>
-
-            <article class="editorial-card">
-              <div class="editorial-image gradient-three"></div>
-              <div class="editorial-content">
-                <p class="tag">Market notes</p>
-                <h3>What to watch</h3>
-                <p>
-                  Follow a concise point of view on emerging designers,
-                  investment pieces, and seasonal essentials.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section membership" id="membership">
-        <div class="container membership-card">
-          <div>
-            <p class="eyebrow">Membership</p>
-            <h2>Designed for clients who prefer a private way to shop.</h2>
-          </div>
-          <div class="membership-copy">
-            <p>
-              Use this section for a waitlist, application form, or email
-              invitation. The current static build uses a simple mail link so it
-              can launch without a backend.
-            </p>
-            <a class="button primary" href="mailto:hello@example.com?subject=Membership%20request">
-              Request membership
+            <a class="email-link" href="mailto:hello@example.com">
+              hello@example.com
             </a>
+            <p>Replace this with your preferred email, intake form, or booking link.</p>
           </div>
         </div>
       </section>
     </main>
 
+    <aside class="grid-controls" aria-label="Decorative grid controls">
+      <button type="button" aria-label="Increase grid size">+</button>
+      <button type="button" aria-label="Decrease grid size">-</button>
+    </aside>
+
     <footer class="site-footer">
-      <div class="container footer-content">
-        <p>&copy; <span id="year"></span> Rachael O'Dea. All rights reserved.</p>
-        <a href="mailto:hello@example.com">hello@example.com</a>
-      </div>
+      <span>&copy; <span id="year"></span> Rachael O'Dea</span>
+      <a href="#top">Back to top</a>
     </footer>
 
     <script src="script.js"></script>

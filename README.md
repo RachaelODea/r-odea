@@ -1,8 +1,8 @@
 # Rachael O'Dea Website
 
-A lightweight static website inspired by refined luxury membership and sourcing
-sites. It is built with HTML, CSS, and JavaScript so copy, sections, and styling
-can be edited quickly while previewing live.
+A lightweight static website inspired by bold communications agency and PR
+portfolio sites. It is built with HTML, CSS, and JavaScript so copy, sections,
+and styling can be edited quickly while previewing live.
 
 ## Live preview while editing
 
