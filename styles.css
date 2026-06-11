@@ -106,10 +106,10 @@ p {
 .intro-o-cover,
 .intro-o-spin {
   position: absolute;
-  top: 20%;
-  left: 30.9%;
-  width: 16.2%;
-  height: 61%;
+  top: 19%;
+  left: 29.5%;
+  width: 17.8%;
+  height: 63%;
 }
 
 .intro-o-cover {
@@ -122,8 +122,8 @@ p {
   overflow: hidden;
   background-image: url("LOGO.png");
   background-repeat: no-repeat;
-  background-size: 617% auto;
-  background-position: 36.7% 51%;
+  background-size: 562% auto;
+  background-position: 35.9% 50%;
   transform-origin: 50% 50%;
   transform-style: preserve-3d;
   animation: slot-o-spin 2.8s cubic-bezier(0.18, 0.76, 0.25, 1) 350ms 1 both;
