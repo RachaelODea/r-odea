@@ -361,7 +361,7 @@ h1 {
 
 .disciplines {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -372,6 +372,7 @@ h1 {
   border-right: 1px solid var(--line);
 }
 
+.disciplines article:nth-child(4n),
 .disciplines article:last-child {
   border-right: 0;
 }
