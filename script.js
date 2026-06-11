@@ -1,14 +1,7 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelectorAll(".nav-links a");
 const cityClocks = document.querySelectorAll("[data-timezone]");
 const introScreen = document.querySelector("#intro-screen");
 const introSpinner = document.querySelector(".intro-o-spin");
 const introEnter = document.querySelector(".intro-enter");
-const year = document.querySelector("#year");
-
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
 
 const updateCityClocks = () => {
   const now = new Date();
@@ -61,17 +54,3 @@ if (introScreen && introEnter) {
 
   introEnter.addEventListener("click", enterSite);
 }
-
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = document.body.classList.toggle("nav-open");
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-}
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    document.body.classList.remove("nav-open");
-    navToggle?.setAttribute("aria-expanded", "false");
-  });
-});
