@@ -424,6 +424,14 @@ body.intro-ready .intro-enter {
   padding: 0;
 }
 
+.sectors-intro {
+  max-width: 720px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: clamp(0.88rem, 1.35vw, 1.05rem);
+  line-height: 1.52;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .intro-o-spin {
     animation: none;
