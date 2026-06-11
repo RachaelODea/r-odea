@@ -2,6 +2,9 @@ const cityClocks = document.querySelectorAll("[data-timezone]");
 const introScreen = document.querySelector("#intro-screen");
 const introSpinner = document.querySelector(".intro-o-spin");
 const introEnter = document.querySelector(".intro-enter");
+const menuWrap = document.querySelector(".menu-wrap");
+const menuToggle = document.querySelector(".menu-toggle");
+const menuLinks = document.querySelectorAll(".menu-dropdown a");
 
 const updateCityClocks = () => {
   const now = new Date();
@@ -53,4 +56,19 @@ if (introScreen && introEnter) {
   }
 
   introEnter.addEventListener("click", enterSite);
+}
+
+if (menuWrap && menuToggle) {
+  const setMenuOpen = (isOpen) => {
+    menuWrap.classList.toggle("is-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  menuToggle.addEventListener("click", () => {
+    setMenuOpen(!menuWrap.classList.contains("is-open"));
+  });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => setMenuOpen(false));
+  });
 }
