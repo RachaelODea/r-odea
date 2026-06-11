@@ -392,6 +392,24 @@ body.intro-ready .intro-enter {
   line-height: 1.52;
 }
 
+.about-page-section {
+  display: grid;
+  justify-items: center;
+  gap: 1.05rem;
+  margin-top: clamp(2.6rem, 5vw, 4.5rem);
+}
+
+.about-page-section h2 {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: clamp(0.88rem, 1.35vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .services-page-content {
   width: min(100%, 860px);
 }
@@ -430,6 +448,15 @@ body.intro-ready .intro-enter {
   font-family: var(--sans);
   font-size: clamp(0.88rem, 1.35vw, 1.05rem);
   line-height: 1.52;
+}
+
+.contact-email {
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: clamp(0.95rem, 1.8vw, 1.22rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 @media (prefers-reduced-motion: reduce) {
