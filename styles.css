@@ -431,6 +431,8 @@ body.intro-ready .intro-enter {
 .services-list li {
   display: grid;
   gap: 0.24rem;
+  justify-items: center;
+  text-align: center;
 }
 
 .services-list span {
@@ -438,9 +440,9 @@ body.intro-ready .intro-enter {
 }
 
 .services-list p {
-  max-width: 620px;
+  max-width: 560px;
   color: var(--muted);
-  font-size: clamp(0.72rem, 1vw, 0.86rem);
+  font-size: clamp(0.68rem, 0.9vw, 0.8rem);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.38;
