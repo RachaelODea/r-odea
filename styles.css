@@ -457,6 +457,11 @@ body.intro-ready .intro-enter {
   line-height: 1.52;
 }
 
+.sectors-perspective {
+  max-width: 760px;
+  color: var(--muted);
+}
+
 .contact-email {
   color: var(--white);
   font-family: var(--sans);
