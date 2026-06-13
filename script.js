@@ -2,6 +2,7 @@ const cityClocks = document.querySelectorAll("[data-timezone]");
 const introScreen = document.querySelector("#intro-screen");
 const introSpinner = document.querySelector(".intro-o-spin");
 const introEnter = document.querySelector(".intro-enter");
+const shouldSkipIntro = new URLSearchParams(window.location.search).get("skipIntro") === "true";
 
 const updateCityClocks = () => {
   const now = new Date();
@@ -30,7 +31,10 @@ if (cityClocks.length) {
   setInterval(updateCityClocks, 1000);
 }
 
-if (introScreen && introEnter) {
+if (introScreen && shouldSkipIntro) {
+  introScreen.remove();
+  document.body.classList.remove("intro-active", "intro-ready");
+} else if (introScreen && introEnter) {
   const revealIntroEnter = () => {
     document.body.classList.add("intro-ready");
   };
