@@ -462,7 +462,30 @@ body.intro-ready .intro-enter {
   color: var(--muted);
 }
 
+.contact-content {
+  display: grid;
+  justify-items: center;
+  gap: 0.9rem;
+  width: min(100%, 720px);
+  text-align: center;
+}
+
+.contact-intro,
+.contact-note {
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: clamp(0.88rem, 1.35vw, 1.05rem);
+  line-height: 1.5;
+}
+
+.contact-note {
+  max-width: 640px;
+  color: var(--muted);
+  font-size: clamp(0.78rem, 1.1vw, 0.92rem);
+}
+
 .contact-email {
+  margin-top: 0.4rem;
   color: var(--white);
   font-family: var(--sans);
   font-size: clamp(0.95rem, 1.8vw, 1.22rem);
