@@ -295,6 +295,12 @@ body.intro-ready .intro-enter {
   max-width: min(100%, 1060px);
 }
 
+.hero-positioning {
+  display: grid;
+  width: fit-content;
+  max-width: 100%;
+}
+
 .image-strip {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -303,7 +309,13 @@ body.intro-ready .intro-enter {
 }
 
 .image-strip-top {
-  margin-bottom: clamp(1.2rem, 3vw, 2.2rem);
+  width: 100%;
+  margin-bottom: clamp(0.75rem, 1.8vw, 1.1rem);
+}
+
+.image-strip-top .image-tile {
+  min-height: 0;
+  aspect-ratio: 3 / 4;
 }
 
 .image-strip-bottom {
@@ -649,6 +661,11 @@ body.intro-ready .intro-enter {
 
   .image-tile {
     min-height: clamp(4.2rem, 17vw, 6.5rem);
+  }
+
+  .image-strip-top .image-tile {
+    min-height: 0;
+    aspect-ratio: 3 / 4;
   }
 
   .about-page {
