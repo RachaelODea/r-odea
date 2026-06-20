@@ -109,6 +109,27 @@
         text-transform: uppercase;
       }
 
+      .note {
+        color: var(--muted);
+        font-size: 0.82rem;
+        line-height: 1.5;
+      }
+
+      .intro-link {
+        color: var(--white);
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(229, 224, 220, 0.14);
+        border-radius: 1rem;
+        background: #000;
+      }
+
       img {
         display: block;
         width: 100%;
@@ -133,7 +154,12 @@
         <h1>Device preview</h1>
         <p class="intro">
           This page shows how the R-ODEA homepage looks on iPhone and iPad.
-          <a class="live-link" href="index.html">Open the live site</a>
+          Intro previews play the real O animation. Homepage previews are still images.
+          <a class="live-link" href="index.html">Open the live intro</a>
+        </p>
+        <p class="note">
+          The intro screen animates on the live site — the O spins once, then the Enter button appears.
+          <a class="intro-link" href="index.html">See it live</a>
         </p>
       </div>
 
@@ -142,8 +168,8 @@
           <h2>iPhone</h2>
           <div class="shots">
             <figure>
-              <img src="assets/previews/iphone-intro.png" alt="R-ODEA intro screen on iPhone">
-              <figcaption>Intro screen</figcaption>
+              <video src="assets/previews/iphone-intro.mp4" poster="assets/previews/iphone-intro.png" autoplay loop muted playsinline aria-label="R-ODEA intro animation on iPhone"></video>
+              <figcaption>Intro screen (animated)</figcaption>
             </figure>
             <figure>
               <img src="assets/previews/iphone-home.png" alt="R-ODEA homepage on iPhone">
@@ -156,8 +182,8 @@
           <h2>iPad</h2>
           <div class="shots">
             <figure>
-              <img src="assets/previews/ipad-intro.png" alt="R-ODEA intro screen on iPad">
-              <figcaption>Intro screen</figcaption>
+              <video src="assets/previews/ipad-intro.mp4" poster="assets/previews/ipad-intro.png" autoplay loop muted playsinline aria-label="R-ODEA intro animation on iPad"></video>
+              <figcaption>Intro screen (animated)</figcaption>
             </figure>
             <figure>
               <img src="assets/previews/ipad-home.png" alt="R-ODEA homepage on iPad">
