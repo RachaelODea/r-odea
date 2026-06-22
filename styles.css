@@ -476,7 +476,7 @@ body.intro-ready .intro-enter {
   min-height: 100vh;
   align-content: start;
   justify-items: center;
-  padding: clamp(11.5rem, 30vw, 14.5rem) var(--pad) clamp(3rem, 7vw, 5rem);
+  padding: clamp(9.25rem, 19vw, 11rem) var(--pad) clamp(3rem, 7vw, 5rem);
   background: #000000;
   text-align: center;
 }
@@ -768,7 +768,7 @@ body.intro-ready .intro-enter {
   }
 
   .about-page {
-    padding-top: clamp(12rem, 42vw, 14rem);
+    padding-top: clamp(9rem, 24vw, 10.5rem);
   }
 
   .about-page-logo img {
