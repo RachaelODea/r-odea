@@ -94,6 +94,7 @@ p {
   position: relative;
   width: min(78vw, 760px);
   overflow: visible;
+  perspective: 900px;
 }
 
 .intro-logo-base {
@@ -158,23 +159,18 @@ body.intro-ready .intro-enter {
 
 @keyframes slot-o-spin {
   0% {
-    filter: blur(0);
     transform: rotateX(0deg) scaleY(1);
   }
   20% {
-    filter: blur(1.5px);
     transform: rotateX(360deg) scaleY(0.98);
   }
   45% {
-    filter: blur(1.1px);
     transform: rotateX(720deg) scaleY(1.02);
   }
   72% {
-    filter: blur(0.8px);
     transform: rotateX(1080deg) scaleY(0.99);
   }
   100% {
-    filter: blur(0);
     transform: rotateX(1080deg) scaleY(1);
   }
 }
@@ -311,6 +307,10 @@ body.intro-ready .intro-enter {
 .image-strip-top {
   width: 100%;
   margin-bottom: clamp(0.75rem, 1.8vw, 1.1rem);
+}
+
+.hero.image-option-top {
+  padding-top: clamp(10.5rem, 16vw, 12rem);
 }
 
 .image-strip-top .image-tile {
@@ -471,10 +471,12 @@ body.intro-ready .intro-enter {
 }
 
 .about-page {
+  position: relative;
   display: grid;
   min-height: 100vh;
-  place-items: center;
-  padding: clamp(2rem, 7vw, 5rem) var(--pad);
+  align-content: start;
+  justify-items: center;
+  padding: clamp(11.5rem, 30vw, 14.5rem) var(--pad) clamp(3rem, 7vw, 5rem);
   background: #000000;
   text-align: center;
 }
@@ -708,12 +710,13 @@ body.intro-ready .intro-enter {
   }
 
   .hero.image-option-top {
-    padding-top: clamp(10.75rem, 36vw, 12.5rem);
+    padding-top: clamp(12.25rem, 40vw, 14rem);
   }
 
   .hero-positioning {
     gap: 0.85rem;
     width: 100%;
+    margin-top: 0.35rem;
   }
 
   .image-strip-top {
@@ -765,8 +768,7 @@ body.intro-ready .intro-enter {
   }
 
   .about-page {
-    align-content: center;
-    padding-top: 9rem;
+    padding-top: clamp(12rem, 42vw, 14rem);
   }
 
   .about-page-logo img {
